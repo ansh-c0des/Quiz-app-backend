@@ -31,3 +31,16 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### OS Files ###
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### Logs and temp ###
+*.log
+*.tmp
+*.bak
+
+### Env Files ###
+.env
