@@ -1,10 +1,11 @@
-package com.QuizBackend.Quiz.DAO;
+package com.QuizBackend.Quiz.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
 @Entity
+@Table(name = "\"Question\"")
 public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)

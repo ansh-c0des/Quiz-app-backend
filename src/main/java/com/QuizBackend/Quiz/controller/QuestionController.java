@@ -1,6 +1,6 @@
 package com.QuizBackend.Quiz.controller;
 
-import com.QuizBackend.Quiz.DAO.Question;
+import com.QuizBackend.Quiz.entity.Question;
 import com.QuizBackend.Quiz.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
