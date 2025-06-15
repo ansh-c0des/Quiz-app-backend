@@ -3,10 +3,7 @@ package com.QuizBackend.Quiz.controller;
 import com.QuizBackend.Quiz.entity.Question;
 import com.QuizBackend.Quiz.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -25,6 +22,18 @@ public class QuestionController {
     @GetMapping("category/{category}")
     public List<Question> getAllQuestionsByCategory(@PathVariable("category") String category){
         return questionService.getQuestionsByCategory(category);
+    }
+
+    @PostMapping("add")
+    public String AddQuestion(@RequestBody Question question){
+        return questionService.AddQuestion(question);
+    }
+
+    @DeleteMapping("DeleteAll")
+    public String DeleteAllQuestions(){
+        questionService.clearAllQuestions();
+        return "Success";
+
     }
 
 }
