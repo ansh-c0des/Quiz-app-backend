@@ -17,5 +17,7 @@ public class Question {
     private String Option4;
     private String Right_answer;
     private String Difficulty_level;
-    private String Category;
+
+    @Column(name= "Category")
+    private String category;
 }
