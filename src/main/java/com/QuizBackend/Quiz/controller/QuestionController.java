@@ -18,7 +18,6 @@ public class QuestionController {
 
     @GetMapping("AllQuestions")
     public List<Question> getAllQuestions(){
-
         return questionService.getAllQuestions();
     }
 
