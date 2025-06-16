@@ -1,4 +1,4 @@
-package com.QuizBackend.Quiz.entity;
+package com.QuizBackend.Quiz.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

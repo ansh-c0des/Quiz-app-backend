@@ -1,7 +1,7 @@
 package com.QuizBackend.Quiz.service;
 
 import com.QuizBackend.Quiz.DAO.QuestionDao;
-import com.QuizBackend.Quiz.entity.Question;
+import com.QuizBackend.Quiz.model.Question;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
